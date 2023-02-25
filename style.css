@@ -1,0 +1,24 @@
+body{
+   margin: 0;
+}
+.nav-board{
+    background-color: #c2edce;
+}
+.nav-card{
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav-card-item{
+    display: inline;
+}
+
+.nav-card-item> a {
+    text-decoration: none;
+    color: black;
+    margin: 0 5px;
+    padding: 10px;
+}
+.active{
+    border-bottom: 2px solid;
+}
