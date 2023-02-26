@@ -1,12 +1,18 @@
 body{
    margin: 0;
+   border-style: solid;
+   border-width: 5px;
+   border-color: palevioletred;
+   background-color:beige;
 }
 .nav-board{
-    background-color: #c2edce;
+    display: flex;
+    background-color: #ff0368;
 }
 .nav-card{
     list-style-type: none;
     margin: 0;
+    padding-left: 500px;
 }
 
 .nav-card-item{
@@ -21,4 +27,27 @@ body{
 }
 .active{
     border-bottom: 2px solid;
+}
+.note{
+    display:flex
+}
+.footer{
+    background-color: #ff0368;
+    width: 400px;
+    text-align: center;
+}
+.button{
+     background-color: #ff0368;
+     width: 400px;
+     text-align: center;
+}
+.social-media{
+    background-color: #ff0368;
+    width: 400px;
+    text-align: center;
+}
+.contact{
+   background-color: #ff0368;
+   width: 400px;
+   text-align: center;
 }
