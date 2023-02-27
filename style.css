@@ -25,8 +25,8 @@ body{
     border-bottom: 2px solid;
 }
 .home{
-    display: flex;
     background-color:beige;
+    padding-top: 10px;
 }
 .introduction{
     width: 1000px;
@@ -50,4 +50,28 @@ body{
 .contact{
    width: 400px;
    text-align: center;
+}
+.hello{
+    font-size: 1.5cm;
+   text-shadow:  25px 25px 0px blueviolet, 45px 45px 0px #036ffc;
+   color: transparent;
+   cursor: pointer;
+   -webkit-text-stroke: 4px purple;
+   transition: all .4s;
+}
+.hello:hover{
+    text-shadow: none;
+    color:black
+}
+.contact-me {
+    font-size: 1cm;
+   text-shadow:  25px 25px 0px blueviolet, 45px 45px 0px #036ffc;
+   color: transparent;
+   cursor: pointer;
+   -webkit-text-stroke: 4px purple;
+   transition: all .4s;
+}
+.contact-me:hover{
+    text-shadow: none;
+    color:black
 }
