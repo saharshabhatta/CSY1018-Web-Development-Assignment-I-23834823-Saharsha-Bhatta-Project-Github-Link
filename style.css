@@ -1,14 +1,51 @@
+
 body{
    margin: 0;
+   background-color: white;
+   width: 100%;
+   height: 100vh;
+
 }
 .nav-board{
     display: flex;
-    background-color: #ff0368;
+    background: lavender;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
 }
-.nav-card{
+.nav-card-item{
     list-style-type: none;
-    margin: 0;
-    padding-left: 500px;
+    display: inline-block;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+.nav-card-item ::after{
+    content: '';
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+.nav-card-item{
+    color: white;
+}
+.nav-card-item :hover::after{
+    top: 50%;
+    opacity: 1;
 }
 
 .nav-card-item{
@@ -21,11 +58,7 @@ body{
     margin: 0 5px;
     padding: 10px;
 }
-.active{
-    border-bottom: 2px solid;
-}
 .home{
-    background-color:beige;
     padding-top: 10px;
 }
 .introduction{
@@ -36,8 +69,7 @@ body{
     display:flex
 }
 .footer{
-    width: 400px;
-    text-align: center;
+    display: flex;
 }
 .button{
      width: 400px;
@@ -53,10 +85,9 @@ body{
 }
 .hello{
     font-size: 1.5cm;
-   text-shadow:  25px 25px 0px blueviolet, 45px 45px 0px #036ffc;
    color: transparent;
    cursor: pointer;
-   -webkit-text-stroke: 4px purple;
+   -webkit-text-stroke: 4px black;
    transition: all .4s;
 }
 .hello:hover{
@@ -65,13 +96,18 @@ body{
 }
 .contact-me {
     font-size: 1cm;
-   text-shadow:  25px 25px 0px blueviolet, 45px 45px 0px #036ffc;
    color: transparent;
    cursor: pointer;
-   -webkit-text-stroke: 4px purple;
+   -webkit-text-stroke: 4px black;
    transition: all .4s;
 }
 .contact-me:hover{
     text-shadow: none;
     color:black
+}
+.work{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ecf2ff;
 }
