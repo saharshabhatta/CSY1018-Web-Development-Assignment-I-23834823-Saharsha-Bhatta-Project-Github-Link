@@ -1,19 +1,20 @@
 
-body{
+body{ /* This css is for the body */
    margin: 0;
    background-color: white;
    width: 100%;
    height: 100vh;
 
-}
-.nav-board{
+} 
+.nav-board{ /* This css is for navigation bar*/
     display: flex;
     background: lavender;
     border-radius: 50px;
     padding: 10px;
     box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
 }
-.nav-card-item{
+/*Nav bar animation*/
+.nav-card-item{ 
     list-style-type: none;
     display: inline-block;
     padding: 13px 35px;
@@ -58,32 +59,33 @@ body{
     margin: 0 5px;
     padding: 10px;
 }
-.home{
+.home{ /*Main body of the page*/
     padding-top: 10px;
+    display: flex;
 }
-.introduction{
+.introduction{ /*Introduction part of the body */
     width: 1000px;
     text-align: left;
 }
 .note{
     display:flex
 }
-.footer{
+.footer{ /*For footer of the page*/
     display: flex;
 }
-.button{
+.button{ /*Subscribe for update button*/
      width: 400px;
      text-align: center;
 }
-.social-media{
+.social-media{ /*Social media icon*/
     width: 400px;
     text-align: center;
 }
-.contact{
+.contact{ /*Contact Us for footer*/
    width: 400px;
    text-align: center;
 }
-.hello{
+.hello{ /*Home page hello*/
     font-size: 1.5cm;
    color: transparent;
    cursor: pointer;
@@ -94,20 +96,43 @@ body{
     text-shadow: none;
     color:black
 }
-.contact-me {
-    font-size: 1cm;
-   color: transparent;
-   cursor: pointer;
-   -webkit-text-stroke: 4px black;
-   transition: all .4s;
-}
-.contact-me:hover{
-    text-shadow: none;
-    color:black
-}
-.work{
+.work{ /*For work experience */
     display: flex;
     padding-left: 20px;
     padding-right: 20px;
     background-color: #ecf2ff;
+}
+.gallery{ /*For portfolio page*/
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px ;
+}
+.photo{
+    flex: 50%;
+    padding: 0 4px;
+}
+.photo img{
+    margin-top: 8px;
+    vertical-align: middle;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*Animation for the contact page*/
+.paragraph{
+    display: inline-block;
+}
+.text{
+    font-size: 1.1em;
+    letter-spacing: 0px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(170), cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    50%{ border-color: transparent;}
+}
+@keyframes typing{
+    from{ width: 0;}
 }
