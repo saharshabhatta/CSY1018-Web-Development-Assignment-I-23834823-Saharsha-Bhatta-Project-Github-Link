@@ -8,7 +8,7 @@ body{ /* This css is for the body */
 } 
 .nav-board{ /* This css is for navigation bar*/
     display: flex;
-    background: lavender;
+    background: teal;
     border-radius: 50px;
     padding: 10px;
     box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
@@ -102,7 +102,6 @@ body{ /* This css is for the body */
     display: flex;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #ecf2ff;
 }
 .word{
     padding-left: 20px;
@@ -155,11 +154,13 @@ body{ /* This css is for the body */
 @keyframes typing{
     from{ width: 0;}
 }
-.input{
-    background-color:  #ecf2ff;
-}
 .report{
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(5);
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 10px;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
 }
 .site{
     padding-left: 20px;
