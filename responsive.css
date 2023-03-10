@@ -1,15 +1,9 @@
-@media (min-width: 800px) { 
-    .home {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  }
-  @media (max-width: 800px) {
+   @media (max-width: 800px) {
     html {
       font-size: 14px;
     }
   }
-  @media (max-width: 800px) {
+   @media (max-width: 800px) {
     .work {
       flex-direction: column;
     }
@@ -47,20 +41,5 @@
         margin: 0 auto;
     }
 }
-@media (max-width: 800px) {
-    .gallery {
-      display: block;
-    }
-    .photo {
-      flex: 100%;
-      padding: 0;
-    }
-    .photo img {
-      margin: 0 auto;
-      display: block;
-      max-width: 100%;
-      height: auto;
-      padding: 0;
-    }
-  }
+
  
