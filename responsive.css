@@ -1,29 +1,39 @@
-   @media (max-width: 800px) {
+
+@media (width <=800px ){
     html {
       font-size: 14px;
     }
-  }
-   @media (max-width: 800px) {
-    .work {
+    .introduction{
+      display: flex;
       flex-direction: column;
+      font-size: medium;
+      text-align: left;
     }
-    .work p {
-      margin-top: 10px;
-    }
-    .work:first-child {
-      margin-top: 30px;
-    }
-    .work:last-child {
-      margin-bottom: 30px;
+    .intro{
+      display: flex;
+      flex-direction: column;
+      font-size: medium;
+      text-align: left;
     }
   }
-  @media (max-width: 1000px) {
+@media screen and (max-width: 800px) { 
+  .report {
+    display: grid;
+  }
+}
+@media screen and (max-width: 800px) {
+  .photo{
+    display: flex;
+    flex-direction: column;
+  }
+}
+  @media (max-width: 800px) {
     .note {
         flex-direction: column;
         padding: 10px;
         margin: 0 auto;
     }
-
+   
     .button {
         margin-right: 0;
         margin-bottom: 10px;
@@ -41,5 +51,3 @@
         margin: 0 auto;
     }
 }
-
- 

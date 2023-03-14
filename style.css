@@ -59,6 +59,9 @@ body{ /* This css is for the body */
     margin: 0 5px;
     padding: 10px;
 }
+main{
+    background-color: #ffeedb;
+}
 .headding{
     font-family: 'Great Vibes', cursive;
 }
@@ -122,6 +125,7 @@ body{ /* This css is for the body */
 }
 .work{ /*For work experience */
     display: flex;
+    flex-direction: row;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -192,4 +196,10 @@ body{ /* This css is for the body */
 .site{
     padding-left: 20px;
     padding-right: 20px;
+}
+@media (width <=800px ){
+    .work{
+    display: flex;
+      flex-direction: column;
+    }
 }
