@@ -1,3 +1,45 @@
+.nav-board {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-card {
+    display: none;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #f9f9f9;
+    z-index: 1;
+  }
+
+  .nav-card-item {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  input[type=checkbox]:checked ~ .nav-card {
+    display: block;
+  }
+}
 
 @media (width <=800px ){
     html {
