@@ -1,3 +1,4 @@
+/*hamburger*/
 .nav-board {
   display: flex;
   justify-content: space-between;
@@ -14,7 +15,9 @@
   cursor: pointer;
   display: none;
 }
-
+#menu-toggle {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .nav-card {
     display: none;
@@ -23,7 +26,7 @@
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: #f9f9f9;
+    background-color: #8b597b;
     z-index: 1;
   }
 
@@ -35,12 +38,11 @@
   .menu-icon {
     display: block;
   }
-
   input[type=checkbox]:checked ~ .nav-card {
     display: block;
   }
 }
-
+/*Home page*/
 @media (width <=800px ){
     html {
       font-size: 14px;
@@ -58,17 +60,30 @@
       text-align: left;
     }
   }
+  /*Sitereport page*/
 @media screen and (max-width: 800px) { 
   .report {
-    display: grid;
-  }
-}
-@media screen and (max-width: 800px) {
-  .photo{
     display: flex;
     flex-direction: column;
   }
 }
+/*portfolio page*/
+@media screen and (max-width: 800px) {
+  .photo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+  }
+  .img{
+    width: 300px;
+    height: auto;
+  }
+  .ima{
+    width: 300px;
+    height: auto;
+  }
+}
+/*Footer*/
   @media (max-width: 800px) {
     .note {
         flex-direction: column;
@@ -93,3 +108,30 @@
         margin: 0 auto;
     }
 }
+/*For contact*/
+@media only screen and (max-width: 800px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+  .input {
+    margin: 0 20px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 50%;
+  }
+}
+  @media screen and (max-width: 800px) {
+    .paragraph {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 10px;
+    }
+    
+    .text {
+      font-size: 0.9em;
+      width: 90%; 
+      animation-duration: 1.5s;
+    }
+  }
